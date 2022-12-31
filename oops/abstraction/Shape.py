@@ -1,4 +1,4 @@
-from abc import ABC, abstractmethod
+from abc import ABC, abstractmethod, abstractproperty
 
 
 class Shape(ABC):
@@ -6,4 +6,7 @@ class Shape(ABC):
         self.shape_name= shape_name
     @abstractmethod
     def draw(self):
+        pass
+    @abstractproperty
+    def  name(self):
         pass
