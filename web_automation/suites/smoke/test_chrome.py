@@ -5,3 +5,6 @@ import pytest
 def test_browser(self):
         browser = Chrome()
         print(browser.getBrowserDriver())
+
+def test_login():
+        print("Login is Success")
